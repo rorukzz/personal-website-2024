@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white py-4 shadow-lg fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Rory.</h1>
+            <nav>
+                <!-- Hamburger icon -->
+                <div class="block md:hidden">
+                    <button id="menu-btn" class="focus:outline-none">
+                        <svg class="w-8 h-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- Full nav menu for larger screens -->
+                <ul id="menu" class="hidden md:flex space-x-8 text-lg">
+                    <li><a href="./index.html" class="current">Home</a></li>
+                    <li><a href="./pages/about.html" class="glow-on-hover">About</a></li>
+                    <li><a href="./pages/skills.html" class="glow-on-hover">Skills</a></li>
+                    <li><a href="./pages/contact.html" class="glow-on-hover">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-gray-900 text-white z-50 p-4">
+            <ul class="flex flex-col space-y-4 text-lg mt-4">
+                <li><a href="#" class="block text-white">Home</a></li>
+                <li><a href="./pages/about.html" class="block text-white">About</a></li>
+                <li><a href="./pages/skills.html" class="block text-white">Skills</a></li>
+                <li><a href="./pages/contact.html" class="block text-white">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero bg-gray-900 h-screen flex flex-col items-center justify-center text-center relative">
+        <div class="container mx-auto">
+            <h2 class="text-5xl md:text-6xl font-bold mb-4">Hi, I'm Rory Folster</h2>
+            <div class="typing-container mb-6">
+                <p id="role" class="typing text-blue-500"></p>
+            </div>
+            <p class="text-xl max-w-xl mx-auto mb-8">
+                Full-time Data Analyst with a passion for frontend and backend development, actively working on side projects that combine coding with data-driven insights.
+            </p>
+            <div class="flex justify-center space-x-4 mb-12">
+                <a href="#" class="btn-primary bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg shadow-lg transition duration-300">Hire Me</a>
+                <a href="#" class="btn-outline border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white font-bold py-2 px-6 rounded-lg shadow-lg transition duration-300">Let's Talk</a>
+            </div>
+            <!-- Social Media Buttons -->
+            <div class="social-icons flex justify-center space-x-4 mt-8">
+                <a href="https://www.facebook.com" target="_blank" class="text-white text-2xl border border-blue-500 p-3 rounded-full hover:bg-blue-500 transition duration-300">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="text-white text-2xl border border-blue-500 p-3 rounded-full hover:bg-blue-500 transition duration-300">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="text-white text-2xl border border-blue-500 p-3 rounded-full hover:bg-blue-500 transition duration-300">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Rory Folster. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

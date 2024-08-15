@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #0f172a; /* Matches the hero section background */
+}
+
+/* Navigation Menu */
+nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.glow-on-hover:hover {
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.75); /* White glowing effect */
+}
+
+nav ul li a.current {
+    color: #1e90ff; /* Light blue color to highlight current page */
+    font-weight: 400; /* Slightly bolder for the current page */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #0f172a;
+    min-height: 100vh;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.typing-container {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing {
+    font-size: 2rem;
+    color: #1e90ff;
+}
+
+/* Social Media Buttons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1.5rem;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #1e90ff;
+    border-radius: 50%;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+    background-color: #1e90ff;
+    color: white;
+}
+
+/* Button Styles */
+.hero .flex a {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+}
+
+.hero .btn-primary {
+    background-color: #1e90ff;
+    border: 2px solid #1e90ff;
+}
+
+.hero .btn-outline {
+    border: 2px solid #1e90ff;
+    color: #1e90ff;
+}
+
+.hero .btn-outline:hover {
+    background-color: #1e90ff;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1.25rem;
+    }
+    .hero .flex a {
+        font-size: 1.25rem;
+    }
+    #menu {
+        display: none;
+    }
+
+    header {
+        padding: 1rem; /* Adjust padding for mobile screens */
+    }
+
+    .typing-container {
+        height: 2rem; /* Slightly smaller on mobile */
+    }
+}
